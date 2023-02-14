@@ -29,11 +29,11 @@ public class MovieController {
 
     /**
      * Gets a particular movie according to a specific id.
-     * @param indbId the id of the movie requested.
+     * @param imdbId the id of the movie requested.
      * @return the movie requested in case of existing.
      */
-    @GetMapping("/{indbId}")
-    public ResponseEntity<Optional<Movie>> getMovie(@PathVariable String indbId) {
-        return new ResponseEntity<Optional<Movie>>(movieService.singleMovie(indbId), HttpStatus.OK);
+    @GetMapping("/{imdbId}")
+    public ResponseEntity<Optional<Movie>> getMovie(@PathVariable String imdbId) {
+        return new ResponseEntity<Optional<Movie>>(movieService.singleMovie(imdbId), HttpStatus.OK);
     }
 }

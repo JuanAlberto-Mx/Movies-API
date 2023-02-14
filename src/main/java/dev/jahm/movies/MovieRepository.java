@@ -16,8 +16,8 @@ public interface MovieRepository extends MongoRepository<Movie, ObjectId> {
 
     /**
      * Gets a particular movie by specifying an id value.
-     * @param indbId the id of the movie.
+     * @param imdbId the id of the movie.
      * @return the information of the movie in case of existing.
      */
-    Optional<Movie> findMovieByIndbId(String indbId);
+    Optional<Movie> findMovieByIndbId(String imdbId);
 }

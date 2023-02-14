@@ -22,7 +22,7 @@ public class Movie {
     @Id
     private ObjectId id;
 
-    private String indbId;
+    private String imdbId;
 
     private String title;
 

@@ -27,10 +27,10 @@ public class MovieService {
 
     /**
      * Gets a movie specified by an id.
-     * @param indbId the id of the movie.
+     * @param imdbId the id of the movie.
      * @return the movie requested.
      */
-    public Optional<Movie> singleMovie(String indbId) {
-        return movieRepository.findMovieByIndbId(indbId);
+    public Optional<Movie> singleMovie(String imdbId) {
+        return movieRepository.findMovieByIndbId(imdbId);
     }
 }
